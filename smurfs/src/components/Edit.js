@@ -1,6 +1,7 @@
 import React from 'react'; 
 import { editSmurf } from '../actions/index'
 import { connect } from "react-redux";
+import './App.css';
 
 
 
@@ -39,9 +40,9 @@ class Edit extends React.Component{
     render(){
         return(
             <form onSubmit={this.formSubmit}>
-                <p className='editHeader'>Name</p><input  className='input' id='Name' onChange={this.handleFieldChange} placeholder='Name' value ={this.state.Name}></input>
-                <p className='editHeader'>Age</p><input className='input' id='Age' onChange={this.handleFieldChange} placeholder='Age' value ={this.state.Age}></input>
-                <p className='editHeader'>Height</p><input className='input' id='Height' onChange={this.handleFieldChange} placeholder='Height' value={this.state.Height}></input>
+                <p className='smurfHeader'>Name</p><input  className='input' id='Name' onChange={this.handleFieldChange} placeholder='Name' value ={this.state.Name}></input>
+                <p className='smurfHeader'>Age</p><input className='input' id='Age' onChange={this.handleFieldChange} placeholder='Age' value ={this.state.Age}></input>
+                <p className='smurfHeader'>Height</p><input className='input' id='Height' onChange={this.handleFieldChange} placeholder='Height' value={this.state.Height}></input>
                 <button>save</button>
             </form>
         )
