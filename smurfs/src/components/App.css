@@ -26,3 +26,33 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.smurfProfile{
+  display: flex;
+  flex-direction: column;
+  background: skyblue;
+  border: 2px solid dodgerblue;
+  margin: 5px;
+  width: 50%;
+  align-items: center;
+}
+
+
+.smurfFeature{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid dodgerblue;
+  width: 50%;
+  justify-content: center;
+  color: white;
+}
+
+button{
+  background: dodgerblue;
+  margin: 6%;
+  padding: 4%;
+  color: white;
+  border: 2px solid white;
+  width: 100%;
+}
